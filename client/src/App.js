@@ -4,7 +4,7 @@ import logo from './VLogo.png';
 import './App.css';
 import './components/DarkMode.css';
 
-// Stuff I use
+// Stuff We use
 import Header from "./components/header.js";
 import Intro from "./components/Intro.js";
 import Single from "./components/Single.js";

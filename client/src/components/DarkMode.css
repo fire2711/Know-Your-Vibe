@@ -35,19 +35,6 @@
   }
 
 
-.min-max-wrapper {
-    /* Add your default styles here */
-  }
-  
-  /* Styles for light mode */
-  .light-mode .min-max-wrapper {
-    /* Add your light mode styles here */
-  }
-  
-  /* Styles for dark mode */
-  /* .dark-mode .min-max-wrapper {
-  } */
-
 
   .dark-mode .demo-button::after{
     background: var(--dark-background-color);
@@ -64,7 +51,7 @@
 
 
   .dark-mode .demo-button:hover::after{
-    filter: brightness(0.25); /* Reduce brightness to 50% */
+    filter: brightness(0.25); 
 }
 
 
@@ -141,20 +128,11 @@
     color: #6A6A6A;
     /* filter: brightness(0.25); */
 }
-/* 
-.sort{
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom:2px;
-    background: #ffd8b2;
-    border-radius: 5px;
-    color: #ff4000;
-    
-} */
+
 
 .sort{
     background-image: linear-gradient(to left, #ff8000, #ff4000);
-    -webkit-background-clip: text; /* Clip text to background */
+    -webkit-background-clip: text; 
     color: transparent; /* Set text color to transparent */
 }
 
@@ -201,7 +179,7 @@
 }
 
 .dark-mode .custom-datagrid .MuiDataGrid-root::-webkit-scrollbar-thumb {
-    background-color: red; /* Color of the scrollbar thumb */
+    background-color: red; 
   }
 
   .dark-mode .MuiDataGrid-scrollbar--vertical{

@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import "./Intro.css";
 
 // component for slowest songs
-import MinSongs from "./MinSongs.js"
 import IntroBPM from "./IntroBPM.js"
 import Single from "./Single.js"
 

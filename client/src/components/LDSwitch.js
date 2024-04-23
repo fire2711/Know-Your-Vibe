@@ -2,7 +2,7 @@
 import React from 'react';
 import Switch from 'react-switch';
 import "../App.css";
-import"./Header.css";
+import "./Header.css";
 
 function LDSwitch({ onDarkModeToggle, isDarkMode }) {
   const handleSwitchChange = (checked) => {
@@ -10,18 +10,17 @@ function LDSwitch({ onDarkModeToggle, isDarkMode }) {
   };
 
   return (
-    <div>
+    <label>
       <Switch
-        className="custom-switch"
+        onChange={handleSwitchChange}
         checked={isDarkMode}
         onColor="#ff8000"
         offColor="#6A6A6A"
-        activeBoxShadow="#ff800"
-        onChange={handleSwitchChange}
+        activeBoxShadow="#ff8000"
         checkedIcon={false}
         uncheckedIcon={false}
       />
-    </div>
+    </label>
   );
 }
 

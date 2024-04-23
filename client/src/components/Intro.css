@@ -116,7 +116,7 @@
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    background-color: #e0e0e0; /* Set the background color for the padding area */
+    background-color: #e0e0e0;
     border: none;
     z-index: 0;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition duration set to 0.3s */
@@ -136,7 +136,7 @@
     content: "";
     background: linear-gradient(to right, #ff8000, #ff4000), linear-gradient(to right, #cccccc, #cccccc);
     background-position: left top, left top;
-    background-size: 100% 100%, 0% 100%; /* Set the size of the gradients */
+    background-size: 100% 100%, 0% 100%; 
     background-repeat: no-repeat;
     width: 250px;
     height: 90%;
@@ -309,7 +309,7 @@
     box-shadow: 0px 0 100px  -10px #ff4000;
     border-radius: 5px;
     border: 2px solid #ff4000;;
-    border-radius: 5px; /* Apply border-radius for the border image */
+    border-radius: 5px; 
   }
   
   .submit-button-intro:hover{

@@ -20,20 +20,20 @@
   }
 
   .custom-slider .MuiSlider-root {
-    color: #ff4000;  /* Change the color of the entire slider */
+    color: #ff4000;  
   }
   
   .custom-slider .MuiSlider-rail {
-    background-color: gray; /* Change the color of the slider rail (the background behind the thumb) */
+    background-color: gray; 
   }
 
 .custom-slider .MuiSlider-track {
     background-color: #ff4000; 
-    border-color: #ff4000;  /* Change the track color */
+    border-color: #ff4000;  
   }
   
   .custom-slider .MuiSlider-thumb {
-    background-color: #ff4000; /* Change the thumb color */
+    background-color: #ff4000; 
   }
 
   .custom-slider .MuiSlider-thumb:hover, 
@@ -43,8 +43,8 @@
 
   
   .custom-slider .MuiSlider-mark {
-    background-color: #ff4000; /* Change the mark color */
-    width: 8px; /* Adjust the width of the marks */
+    background-color: #ff4000;
+    width: 8px; 
     height: 8px;
     border-radius: 50%;
   }
@@ -58,7 +58,7 @@
     box-shadow: 0px 0 100px  -10px #ff4000;
     border-radius: 5px;
     border: 2px solid #ff4000;;
-    border-radius: 5px; /* Apply border-radius for the border image */
+    border-radius: 5px; 
   }
   
   .submit-button:hover{

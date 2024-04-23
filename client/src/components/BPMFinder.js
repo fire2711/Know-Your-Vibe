@@ -67,9 +67,7 @@ const BPMFinder = () => {
       </div>
       <button onClick={handleConfirm} className="submit-button">Confirm</button>
       <div className="anonymous-container">
-            <p>"With Viber, we are able to improve our song curation at the click of a button. Any song is a dropoff point
-                and we're able to gain insight on what type of music our users like."
-            </p>
+      <p>"After using Viber, creating playlists has never been the same. This will likely continue to be a changechanger from DJs to Event Planners."</p>
             <p>- Anonymous</p>
         </div>
        </div>
