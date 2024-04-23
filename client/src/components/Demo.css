@@ -1,0 +1,83 @@
+@media (max-width: 1000px) {
+.submit-button{
+  margin-bottom:25px;
+}
+}
+
+.slider-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slider-wrapper{
+    width: 40%;
+   
+  }
+
+  .slider-wrapper-intro{
+    width: 80%;
+  }
+
+  .custom-slider .MuiSlider-root {
+    color: #ff4000;  /* Change the color of the entire slider */
+  }
+  
+  .custom-slider .MuiSlider-rail {
+    background-color: gray; /* Change the color of the slider rail (the background behind the thumb) */
+  }
+
+.custom-slider .MuiSlider-track {
+    background-color: #ff4000; 
+    border-color: #ff4000;  /* Change the track color */
+  }
+  
+  .custom-slider .MuiSlider-thumb {
+    background-color: #ff4000; /* Change the thumb color */
+  }
+
+  .custom-slider .MuiSlider-thumb:hover, 
+  .custom-slider .MuiSlider-thumb:focus{
+    box-shadow: 0 0 0 5px rgb(128, 128, 128, 0.5);
+  }
+
+  
+  .custom-slider .MuiSlider-mark {
+    background-color: #ff4000; /* Change the mark color */
+    width: 8px; /* Adjust the width of the marks */
+    height: 8px;
+    border-radius: 50%;
+  }
+
+
+  .submit-button{
+    margin-top:25px;
+    padding-top: none;
+    width: 250px;
+    height: 40px;
+    box-shadow: 0px 0 100px  -10px #ff4000;
+    border-radius: 5px;
+    border: 2px solid #ff4000;;
+    border-radius: 5px; /* Apply border-radius for the border image */
+  }
+  
+  .submit-button:hover{
+    border: 3px solid #ff4000;
+    background: #ffd8b2;
+  }
+
+  .submit-button-subtext{
+    margin-top:10px;
+  }
+  
+
+
+  .demo-hr{
+    width: 170px;
+    height: 4px;
+    position: relative;
+    bottom: 40px;
+    background: linear-gradient(to right, #ff8000, #ff4000 ); 
+    border: none;
+    box-shadow: 0 0 5px #ff4000;
+  }

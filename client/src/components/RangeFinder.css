@@ -1,0 +1,31 @@
+.anonymous-container{
+    text-align:left;
+    font-size: 18px;
+    margin-top:70px;
+    padding-top:10px;
+    padding-left:25px;
+    padding-right:25px;
+    margin-left:15px;
+    width: 400px;
+    height: 225px;
+    border-radius: 8px;
+    background-color: #FAFAFAFA;
+    color: gray;
+    line-height:1.7;
+    box-shadow: 0 0 30px lightgray;
+}
+
+.anonymous-container:hover{
+    transform: scale(1.01);
+}
+
+@media (max-width: 1000px) {
+    .anonymous-container{
+        display:none;
+    }
+}
+
+.dark-mode .anonymous-container{
+    background: var(--dark-background-color);
+    box-shadow: 0 0 30px #151819;;
+}

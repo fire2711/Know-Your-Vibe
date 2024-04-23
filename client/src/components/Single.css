@@ -1,0 +1,122 @@
+
+
+@media (max-width: 1000px) {
+    .single-title-container{
+        margin-top:60px;
+    }
+
+    .slider-grid-flex-container{
+        display:flex!important;
+        flex-direction: column!important;
+        justify-content:space-between!important;
+        align-items:center!important;
+        margin:0!important;
+        padding:0!important;
+    
+    }
+
+    .single-title-container h1{
+        font-size: 45px!important;
+    }
+}
+
+.single-flex-container{
+    height:100vh;
+}
+.single-title-container{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+
+   
+
+}
+
+.single-title-container h1{
+    margin-top: 50px;
+    font-size: 50px;
+ 
+}
+
+.single-title{
+    background-image: linear-gradient(to right, #ff8000, #ff4000);
+    -webkit-background-clip: text; /* Clip text to background */
+    color: transparent; /* Set text color to transparent */
+}
+
+.single-hr{
+    width: 100px;
+    height: 4px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff8000, #ff4000 ); 
+    border: none;
+    box-shadow: 0 0 2px #ff4000;
+  }
+
+  .single-title-subtext{
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom:50px;
+  }
+
+  /* Demo */
+
+  .single-demo-container{
+    margin-left: 80px;
+    text-align: center;
+  }
+
+  /* data grid */
+  .datagrid-container-wrapper{
+    height: 420px;
+    background-color: #FAFAFA;
+    /* background-color: cyan; */
+    box-shadow: 0px 0 30px lightgray;
+    border-radius: 5px;
+    margin-right: 45px;
+    margin-left:45px;
+  }
+
+  .datagrid-container {
+    height: 355px;
+    padding:20px;
+    border-radius: 5px;
+
+  }
+  
+  .custom-datagrid {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    margin:15px;
+  }
+  
+  .custom-datagrid .MuiDataGrid-columnsContainer {
+    background-color: #f0f0f0;
+  }
+  
+  .custom-datagrid .MuiDataGrid-cell {
+    border-bottom: 1px solid #cccccc;
+  }
+  
+  .custom-datagrid .MuiDataGrid-columnHeader {
+    font-weight: bold;
+  }
+
+  /* slider-grid-flex-container */
+.slider-grid-flex-container{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.slider-grid-flex-container .slider-container {
+    margin-left: 75px;
+
+}
+.slider-grid-flex-container .slider-container .slider-wrapper{
+    /* background-color: red; */
+    width: 500px;
+}

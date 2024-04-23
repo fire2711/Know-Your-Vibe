@@ -1,0 +1,222 @@
+/* Light & Dark */
+:root {
+    --light-background-color: #ffffff;
+    --light-text-color: #333333;
+    --dark-background-color: #333333;
+    --dark-text-color: #ffffff;
+  }
+
+.dark-mode .navbar{
+    background-color: var(--light-text-color);
+    box-shadow: 0 2px 10px var(--light-text-color);
+}
+
+
+
+  
+  .light-mode {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .mode-toggle {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+
+.min-max-wrapper {
+    /* Add your default styles here */
+  }
+  
+  /* Styles for light mode */
+  .light-mode .min-max-wrapper {
+    /* Add your light mode styles here */
+  }
+  
+  /* Styles for dark mode */
+  /* .dark-mode .min-max-wrapper {
+  } */
+
+
+  .dark-mode .demo-button::after{
+    background: var(--dark-background-color);
+  } 
+
+  .dark-mode .submit-button{
+    background-color: var(--dark-background-color);
+    box-shadow: none;
+  }
+
+  .dark-mode .demo-button, .submit-button{
+    color: var(--light-dark-color)
+  }
+
+
+  .dark-mode .demo-button:hover::after{
+    filter: brightness(0.25); /* Reduce brightness to 50% */
+}
+
+
+  .dark-mode .navbar-button{
+    color: var(--dark-text-color);
+    background-color: var(--dark-background-color);
+  }
+
+  .dark-mode .navbar-button:hover{
+    filter:brightness(0.85);
+  }
+  .dark-mode .submit-button:hover{
+    border-color: #e0e0e0; 
+    background-color: var(--dark-background-color);
+    box-shadow: none;
+    filter: brightness(0.70);
+  }
+
+ .dark-mode .submit-button{
+    border-color: #e0e0e0; 
+    color: gray;
+  }
+
+
+.dark-mode .user-block{
+
+    background-color: var(--dark-background-color);
+    box-shadow: 0px 0 30px #070F11;
+}
+
+.dark-mode .vibes-block{
+    background-color: var(--dark-background-color);
+    box-shadow: 0px 0 30px #070F11;
+}
+
+.dark-mode .user-box{
+    color: var(--light-text-color);
+}
+.dark-mode .vibes-box{
+    color: var(--light-text-color);
+    background-color: #ffd8b2;
+}
+
+.dark-mode .intro-bpm-wrapper{
+    background:#151819;
+}
+
+.dark-mode .custom-slider .MuiSlider-rail {
+    background-color: gray; 
+
+}
+
+.dark-mode .custom-slider .MuiSlider-markLabel{
+    color: var(--dark-text-color)
+}
+
+
+
+.dark-mode .intro-bpm-subtext-number{
+    color: var(--light-text-color);
+
+}
+
+
+.dark-mode .submit-button-intro{
+    background: #151819;
+    border-color: #333333;
+    color: #6A6A6A;
+}
+
+.dark-mode .submit-button-intro:hover{
+    background: none;
+    border-color:var(--dark-text-color);
+    color: #6A6A6A;
+    /* filter: brightness(0.25); */
+}
+/* 
+.sort{
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom:2px;
+    background: #ffd8b2;
+    border-radius: 5px;
+    color: #ff4000;
+    
+} */
+
+.sort{
+    background-image: linear-gradient(to left, #ff8000, #ff4000);
+    -webkit-background-clip: text; /* Clip text to background */
+    color: transparent; /* Set text color to transparent */
+}
+
+
+
+
+/* datagrid */
+
+.dark-mode .datagrid-container-wrapper{
+    background-color: var(--dark-background-color);
+    box-shadow: 0px 0 30px #070F11;
+    background: var(--dark-background-color);
+  }
+
+  .dark-mode .custom-datagrid {
+    background: #151819;
+    color: var(--dark-text-color);
+  }
+  
+  .dark-mode .custom-datagrid .MuiDataGrid-columnsContainer {
+    background: #151819;
+    color: var(--dark-text-color);
+
+  }
+  
+  .dark-mode .custom-datagrid .MuiDataGrid-cell {
+    border-bottom: 1px solid #cccccc;
+    color: var(--dark-text-color);
+
+  }
+  
+  .dark-mode .custom-datagrid .MuiDataGrid-columnHeader {
+    font-weight: bold;
+    background: #151819;
+    color: var(--dark-text-color);
+  }
+
+  .dark-mode .custom-datagrid .MuiDataGrid-cell {
+    border: 1px solid #2c3034;
+  }
+
+  .dark-mode .custom-datagrid .MuiDataGrid-root::-webkit-scrollbar-track {
+    background-color: red;    
+}
+
+.dark-mode .custom-datagrid .MuiDataGrid-root::-webkit-scrollbar-thumb {
+    background-color: red; /* Color of the scrollbar thumb */
+  }
+
+  .dark-mode .MuiDataGrid-scrollbar--vertical{
+    background-color: red;
+    color: red;
+    
+  }
+  .dark-mode .MuiDataGrid-scrollbar{
+    background-color: red;
+    color: red;
+    
+  }
+
+  .dark-mode .MuiDataGrid-borderColor{
+    background-color: red!important;
+    color: red!important;
+    
+  }

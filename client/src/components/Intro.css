@@ -1,0 +1,325 @@
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    height: 100vh;
+    
+}
+
+@media (max-width: 1000px) {
+    .flex-container {
+      display: flex!important;
+      flex-direction: column!important;
+      align-items: center!important;
+      justify-content: space-between!important;
+      height:100%;
+
+      /* align-items: stretch; */
+    }
+
+    .intro{
+        margin:0!important;      
+    }
+
+    .word-block{
+        display:flex;
+        flex-direction: column;
+        margin:auto!important;
+        height:100%;
+    }
+    .intro-hr{
+        position:inherit!important;
+        align-items: center!important;
+        justify-content:center!important;
+        margin-top:50px!important;
+
+        transform: translateX(0)!important;
+    }
+    .vibes-container, .vibes-block{
+        margin-left:0!important;
+        margin-right:0!important;
+
+    }
+    .intro h1{
+        font-size: 70px!important;
+    }
+  }
+
+
+
+.intro{
+    display: block;
+    margin-left: 150px;
+    margin-top: 175px;
+    margin-bottom: 5px;
+
+  }
+
+  .intro h1{
+    font-size: 75px;
+}
+  
+.intro-vibe, .intro-dot{
+    background-image: linear-gradient(to right, #ff8000, #ff4000);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+  
+.intro-dot{
+    font-size: 70px;
+}
+  
+  
+.intro-subtext{
+    color: gray;
+    font-size: 18px;
+}
+  
+.subtext{
+    color: gray;
+    font-size: 18px;
+  }
+  
+  
+.intro-hr{
+    width: 170px;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    background: linear-gradient(to right, #ff8000, #ff4000 ); 
+    border: none;
+    box-shadow: 0 0 5px #ff4000;
+  }
+  
+
+  /* Buttons */
+
+.demo-button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+
+.demo-button{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background-color: #e0e0e0; /* Set the background color for the padding area */
+    border: none;
+    z-index: 0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition duration set to 0.3s */
+    text-decoration: none;
+    color: var(--dark-background-color);
+    text-align: center;
+   
+     
+
+}
+
+.demo-button:active{
+    color: var(--dark-background-color);
+}
+
+.demo-button::before {
+    content: "";
+    background: linear-gradient(to right, #ff8000, #ff4000), linear-gradient(to right, #cccccc, #cccccc);
+    background-position: left top, left top;
+    background-size: 100% 100%, 0% 100%; /* Set the size of the gradients */
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 90%;
+    position: absolute;
+    
+    top: 50%;
+    left: -50%;
+    transform: translateY(-50%);
+    animation: swing cubic-bezier(0.2, 0.8, 0.8, .2) infinite;
+    animation-duration: calc(2s * (250 / 250));
+    transform-origin: right;
+    box-shadow: 0px 0 10px -5px #ff4000;
+    z-index: -1;
+    
+}
+
+.demo-button::after{
+    content: '';
+    position: absolute;
+    background: white;
+    inset: 1px;
+    border-radius: 5px;
+    z-index: -1;
+
+    
+}
+
+.demo-button:hover::after{
+    background: #f5f5f5;
+   
+    
+}
+
+
+@keyframes swing {
+    0% {
+        transform: translateY(-50%) rotate(-90deg); /* Start from -90deg (pointing upwards) */
+    }
+    50% {
+        transform: translateY(-50%) rotate(90deg); /* Halfway point */
+    }
+    100% {
+        transform: translateY(-50%) rotate(270deg); /* End at 270deg (pointing downwards) */
+    }
+}
+
+
+
+
+.word-block{
+    margin-top: 150px;
+    margin-right: 45px;
+
+
+}
+
+.user-container{
+    justify-content: left;
+}
+
+.vibes-container{
+    margin-top: 20px;
+    margin-right: 50px;
+
+
+}
+
+.user-box{
+    display: inline-block;
+    background:lightgray;
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 15px;
+    font-size: 12px;
+  
+
+}
+
+.vibes-box{
+    display: inline-block;
+    background:#ffd8b2;
+    color: #ff4000;
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 15px;
+    font-size: 12px;
+
+}
+
+.user-block{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    background-color: var(--light-background-color);
+    height: 50px;
+    width: 225px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0 30px lightgray;
+    font-size:15px;
+}
+
+
+
+.vibes-block{
+    background-color: var(--light-background-color);
+    width: 475px;
+    padding: 15px;
+    margin-top: 0px;
+    margin-left: 20px;
+    /* margin-right: 50px; */
+    border-radius: 8px;
+    box-shadow: 0px 0 30px lightgray;
+}
+
+.intro-bpm-wrapper{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 30px;
+    background: #FAFAFA;
+    border-radius: 1px;
+
+}
+
+.intro-bpm-subtext{
+    display: block;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.intro-bpm-subtext-list{
+    margin-bottom: 30px;
+    display: block;
+    font-size: 14px;
+    line-height: .7;
+}
+
+.intro-bpm-subtext-list p{
+    margin: none;
+    padding: none;
+}
+
+.intro-bpm-subtext-number{
+    background: #ff4000;
+    border-radius: 4px;
+    padding-left: 4px;
+    margin-right:2px;
+}
+
+
+
+/* Intro Submit Button */
+
+.submit-button{
+    color: var(--dark-background-color);
+}
+
+.submit-button-intro{
+    font-size:15px;
+    margin-top:25px;
+    padding-top: none;
+    width: 100px;
+    height: 25px;
+    box-shadow: 0px 0 100px  -10px #ff4000;
+    border-radius: 5px;
+    border: 2px solid #ff4000;;
+    border-radius: 5px; /* Apply border-radius for the border image */
+  }
+  
+  .submit-button-intro:hover{
+    border: 3px solid #ff4000;
+    background: #ffd8b2;
+  }
+
+  .demo-output {
+    display: block; 
+    margin-left: 20px; 
+    align-self: flex-start;
+    font-size: 13px;
+}
