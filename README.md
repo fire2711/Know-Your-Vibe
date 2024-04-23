@@ -47,13 +47,15 @@ To do this, you will need to have two terminals open.
 ## Terminal 1 -- Running the Client:
 Navigate to the client folder.
 Start the client with:
+```
 npm start
-
+```
 ## Terminal 2 -- Running the Server:
 Navigate to the server folder.
 Start the server with:
+```
 python app.py 
-
+```
 # Troubleshooting:
 ### Common issues with client:
 - Node.js Documentation
@@ -61,8 +63,8 @@ python app.py
 
 ### Common issues with server:
 - npm or node missing.
-   node -v
-   npm -v
+   ```node -v```
+   ```npm -v```
    to check for your node and npm versions.
 If you suspect that you have these downloaded, refresh your Integrated Development Environment (IDE).
 
