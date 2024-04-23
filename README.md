@@ -26,7 +26,9 @@ python -m pip install --upgrade pip
 ```
 
 ## Install Flask for the server
-```pip install flask```
+```
+pip install flask
+```
 
 ## Optional: Install Flask-CORS
 ```
