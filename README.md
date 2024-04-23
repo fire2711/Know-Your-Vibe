@@ -1,5 +1,5 @@
 # Know-Your-Vibe
-
+Wonder what kind of songs you listen? Looking for something new? Use Viber. Know your Vibe :)
 # Project Setup Instructions
 
 This project consists of a client and a server folder. To set up the development environment, follow the instructions below for each folder.
