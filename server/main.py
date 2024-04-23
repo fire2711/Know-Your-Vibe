@@ -115,64 +115,6 @@ def get_specific_Songs(bpm):
         print(f"No songs found for BPM: {bpm}")
     return specific_songs
 
-# def get_range_Songs(start, end):
-#     range_songs = []
-#     for key in ascending_sort:
-#         if start <= key <= end:
-#             temp = bpms[key]
-#             for song in temp:
-#                 song_data = {
-#                     'name': song.name,
-#                     'artist': song.artist,
-#                     'bpm': song.bpm,
-#                     'length': song.length,
-#                     'album': song.album,
-#                     'popularity': song.popularity
-#                 }
-#                 range_songs.append(song_data)
-#     print(range_songs)
-#     return range_songs
-
-# def get_range_Songs(start, end):
-#     range_songs = []
-#     for i in range(len(ascending_sort)):
-#         if ascending_sort[i] in range(start, end):
-#             temp = bpms[ascending_sort[i]]
-#             for song in temp:
-#                 song_data = {
-#                     'name': song.name,
-#                     'artist': song.artist,
-#                     'bpm': song.bpm,
-#                     'length': song.length,
-#                     'album': song.album,
-#                     'popularity': song.popularity
-#                 }
-#                 range_songs.append(song_data)
-#     print(range_songs)
-#     return range_songs
-
-# good
-# def get_range_Songs(start, end):
-#     range_songs = []
-#     for i in range(len(ascending_sort)):
-#         if ascending_sort[i] in range(start, end):
-#             temp = bpms[ascending_sort[i]]
-#             for song in temp:
-#                 song_data = {
-#                     'name': song.name,
-#                     'artist': song.artist,
-#                     'bpm': song.bpm,
-#                     'length': song.length,
-#                     'album': song.album,
-#                     'popularity': song.popularity
-#                 }
-#                 range_songs.append(song_data)
-
-#     # Sort the range_songs list by BPM in ascending order
-#     range_songs.sort(key=lambda x: x['bpm'])
-
-#     return range_songs
-
 def get_range_Songs(start, end):
     range_songs = []
     for i in range(len(ascending_sort)):
@@ -194,25 +136,6 @@ def get_range_Songs(start, end):
     range_songs.sort(key=lambda x: x['bpm'])
 
     return range_songs
-
-
-
-# def get_range_songs_descending(start, end):
-#     range_songs_descending = []
-#     for key in descending_sort:
-#         if end >= key >= start:
-#             temp = bpms[key]
-#             for song in temp:
-#                 song_data = {
-#                     'name': song.name,
-#                     'artist': song.artist,
-#                     'bpm': song.bpm,
-#                     'length': song.length,
-#                     'album': song.album,
-#                     'popularity': song.popularity
-#                 }
-#                 range_songs_descending.append(song_data)
-#     return range_songs_descending
 
 
 def get_range_songs_descending(start, end):

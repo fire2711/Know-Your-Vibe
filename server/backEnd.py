@@ -8,14 +8,8 @@ class Song:
         self.album = album
         self.popularity = popularity
 
-    def display(self):
-         if hasattr(self, 'artists'):
-            print(self.name, ''.join(self.artists), self.bpm, self.length, self.album, self.popularity)
-         else:
-            print(self.name, "Unknown Artist", self.bpm, self.length, self.album, self.popularity)
 
 bpms = {}
-#songs = list(bpms.keys())
 least_ordered = []
 max_ordered = []
 
