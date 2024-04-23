@@ -40,8 +40,8 @@ npm start
 Running the Server
 Navigate to the server folder.
 Start the server with:
-
 python app.py 
+
 Troubleshooting
 If you encounter issues, ensure you've followed the setup instructions carefully. Common issues might include:
 
