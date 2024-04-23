@@ -14,42 +14,46 @@ This project consists of a client and a server folder. To set up the development
    ```bash
    npm install
    
-#Server Setup
-Open your terminal and navigate to the server folder.
-Run the following commands to install the necessary Python packages:
+## Server Setup
+1. Open your terminal and navigate to the server folder.
+1. Run the following commands to install the necessary Python packages:
 
-# Update pip to the latest version
+## Update pip to the latest version
+
+ ```
 python -m pip install --upgrade pip
 
-# Install Flask for the server
-pip install flask
+```
 
-# Optional: Install Flask-CORS
-pip install flask-cors
+## Install Flask for the server
+```pip install flask```
 
-# Install additional packages
-pip install requests
-pip install python-dotenv
+## Optional: Install Flask-CORS
+```pip install flask-cors```
 
-# Running the Client and Server
+## Install additional packages
+```pip install requests```
+```pip install python-dotenv```
+
+## Running the Client and Server
 To do this, you will need to have two terminals open.
 
-Terminal 1--Running the Client:
+## Terminal 1 -- Running the Client:
 Navigate to the client folder.
 Start the client with:
 npm start
 
-Terminal 2--Running the Server:
+## Terminal 2 -- Running the Server:
 Navigate to the server folder.
 Start the server with:
 python app.py 
 
-#Troubleshooting:
-Common issues with client:
+# Troubleshooting:
+###Common issues with client:
 - Node.js Documentation
 - Missing dependencies
 
-Common issues with server:
+###Common issues with server:
 - npm or node missing.
    node -v
    npm -v
