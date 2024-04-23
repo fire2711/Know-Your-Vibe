@@ -29,11 +29,17 @@ python -m pip install --upgrade pip
 ```pip install flask```
 
 ## Optional: Install Flask-CORS
-```pip install flask-cors```
+```
+pip install flask-cors
+```
 
 ## Install additional packages
-```pip install requests```
-```pip install python-dotenv```
+```
+pip install requests
+```
+```
+pip install python-dotenv
+```
 
 ## Running the Client and Server
 To do this, you will need to have two terminals open.
