@@ -41,7 +41,7 @@ pip install requests
 pip install python-dotenv
 ```
 
-## Running the Client and Server
+# Running the Client and Server
 To do this, you will need to have two terminals open.
 
 ## Terminal 1 -- Running the Client:
@@ -55,11 +55,11 @@ Start the server with:
 python app.py 
 
 # Troubleshooting:
-###Common issues with client:
+### Common issues with client:
 - Node.js Documentation
 - Missing dependencies
 
-###Common issues with server:
+### Common issues with server:
 - npm or node missing.
    node -v
    npm -v
