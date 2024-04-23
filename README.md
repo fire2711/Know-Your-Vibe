@@ -15,7 +15,7 @@ This project consists of a client and a server folder. To set up the development
    npm install
    
 ## Server Setup
-1. Open your terminal and navigate to the server folder.
+1. Open your terminal and navigate to the `server` folder.
 1. Run the following commands to install the necessary Python packages:
 
 ## Update pip to the latest version
