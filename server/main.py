@@ -11,27 +11,27 @@ import math
 
 load_dotenv()
 
-client_id = os.getenv("CLIENT_ID")
-client_secret = os.getenv("CLIENT_SECRET")
+# client_id = os.getenv("CLIENT_ID")
+# client_secret = os.getenv("CLIENT_SECRET")
 
-def get_token():
-    auth_string = client_id + ":" + client_secret
-    auth_bytes = auth_string.encode("utf-8")
-    auth_base64 = str(base64.b64encode(auth_bytes), "utf-8")
+# def get_token():
+#     auth_string = client_id + ":" + client_secret
+#     auth_bytes = auth_string.encode("utf-8")
+#     auth_base64 = str(base64.b64encode(auth_bytes), "utf-8")
 
-    url = "https://accounts.spotify.com/api/token"
-    headers = {
-        "Authorization": "Basic " + auth_base64,
-        "Content-Type" : "application/x-www-form-urlencoded"
-    }
-    data = {"grant_type": "client_credentials"}
-    result = post(url, headers=headers, data=data)
-    json_result = json.loads(result.content)
-    token = json_result["access_token"]
-    return token
+#     url = "https://accounts.spotify.com/api/token"
+#     headers = {
+#         "Authorization": "Basic " + auth_base64,
+#         "Content-Type" : "application/x-www-form-urlencoded"
+#     }
+#     data = {"grant_type": "client_credentials"}
+#     result = post(url, headers=headers, data=data)
+#     json_result = json.loads(result.content)
+#     token = json_result["access_token"]
+#     return token
 
-def get_auth_header(token):
-    return{"Authorization": "Bearer " + token}
+# def get_auth_header(token):
+#     return{"Authorization": "Bearer " + token}
 
 
 
@@ -47,7 +47,7 @@ def load_song_list(filename):
 
 def main():
     playlist = []
-    token = get_token()
+    # token = get_token()
     playlist_filename = "playlist.txt"
 
     # print(get_album(token, "2uqYupMHANxnwgeiXTZXzd"))
@@ -60,26 +60,10 @@ def main():
     song_list = []
     filename = "songs.pkl"
     song_list = load_song_list(filename)
-    # for i in range(1749, len(songs)):
-    #     try:
-    #         song = Song(get_name(token, songs[i]), get_artists(token, songs[i]), get_tempo(token, songs[i]), get_length(token,songs[i]), get_album(token,songs[i]), get_popularity(token,songs[i]))
-    #         print(get_name(token, songs[i]))
-    #         print(get_artists(token, songs[i]))
-    #         print(get_tempo(token, songs[i]))
-    #         print(get_length(token, songs[i]))
-    #         print(get_album(token, songs[i]))
-    #         print(get_popularity(token, songs[i]))
-    #         if song not in song_list:
-    #             song_list.append(song)
-    #             counter += 1
-    #
-    #     except Exception as e:
-    #         print(f"An error occurred: {e}")
-    #         save_song_list(filename, song_list)
-    #     print(counter)
 
     with open("songs.pkl", "rb") as f:
         loaded_songs = pickle.load(f)
+
     counter = 0
     song_set = set()
     for song in loaded_songs:
@@ -95,9 +79,6 @@ def main():
 
 ascending_sort = use_quick_sort()
 descending_sort = use_heap_sort()
-
-
-
 
 def get_specific_Song(bpm):
     song_res = []
